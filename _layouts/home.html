@@ -1,0 +1,10 @@
+<html>
+	<head>
+		<title>{{ page.path }}</title>
+	</head>
+	<body>
+		{% for p in site.pages %}
+		  {{ p.path }}
+		{% endfor %}
+	</body>
+</html>
