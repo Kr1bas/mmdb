@@ -7,20 +7,6 @@ designs: "Hajime Kōmoto"
 editor: "Star Comics"
 volumes: [1,2,3,4,5,6,7]
 variants: [1,2]
+
+layout: manga
 ---
-# {{page.title}}
-{% if page.story == page.designs %}
-## {{page.story}}
-{% else %}
-## {{page.story}} - {{page.designs}}
-{% endif %}
-### {{page.editor}}
-
-{% for vol in page.volumes %}
-	{% include_relative "img/mashle/mashle-{{ vol }}.jpg" %}
-{% endfor%}
-
-
-{% for var in page.variants %}
-	{% include_relative "img/mashle/mashle-{{ var}}-variant.jpg" %}
-{% endfor%}
