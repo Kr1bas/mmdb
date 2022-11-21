@@ -34,6 +34,11 @@ theme: minima
 plugins:
   - jekyll-feed
 
+collections_dir: coll
+
+collections:
+  mangas:
+    manga: true
 # Exclude from processing.
 # The following items will not be processed, by default.
 # Any item listed under the `exclude:` key here will be automatically added to
