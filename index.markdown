@@ -4,3 +4,5 @@
 
 layout: home
 ---
+
+{{ site.my_collection.directory }}
