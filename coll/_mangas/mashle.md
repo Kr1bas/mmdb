@@ -17,10 +17,10 @@ variants: [1,2]
 ### {{page.editor}}
 
 {% for vol in page.volumes %}
-	<img src="img/mashle/mashle-"{{vol}}".jpg"></img><br/>
+	{% include_relative "img/mashle/mashle-{{ vol }}.jpg" %}
 {% endfor%}
 
 
 {% for var in page.variants %}
-	<img src="img/mashle/mashle-"{{var}}"-variant.jpg"></img><br/>
+	{% include_relative "img/mashle/mashle-{{ var}}-variant.jpg" %}
 {% endfor%}
