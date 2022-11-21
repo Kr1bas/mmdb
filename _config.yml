@@ -41,7 +41,7 @@ collections:
     output: true
 
 defaults:
-  - scope:
+  scope:
     path: "img"
   values:
     image: true
