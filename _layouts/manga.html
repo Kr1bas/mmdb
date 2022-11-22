@@ -1,6 +1,6 @@
 <html>
 	<head>
-		<title>{{ page.path }}</title>
+		<title>{{ page.title}}</title>
 	</head>
 	<body>
 		<div>
@@ -19,12 +19,12 @@
 		<div>
 	<hr>
 	{% for vol in page.volumes %}
-		<img src="/mmdb/img/mashle/mashle-{{ vol }}.jpg"/>
+		<img src="/mmdb/img/{{ page.img-dir }}/{{ page.img-name}}-{{ vol }}.jpg"/>
 	{% endfor%}
 
 <hr>
 	{% for var in page.variants %}
-		<img src="/mmdb/img/mashle/mashle-{{ var }}-variant.jpg" />
+		<img src="/mmdb/img/{{ page.img-dir }}/{{ page.img-name}}-{{ var }}-variant.jpg" />
 	{% endfor%}
 </div>
 	</body>
