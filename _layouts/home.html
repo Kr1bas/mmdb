@@ -2,21 +2,8 @@
 	<head>
 		<title>{{ page.path }}</title>
 	</head>
-	<body>
-		{% for p in site.pages %}
-		  {{ p.path }}
+		{% for manga in site.mangas %}
+  		<h2><a href="{{ page.baseurl }}/{{ manga.url }}">{{ manga.title }}</a></h2>
 		{% endfor %}
-		
-		{{ site.mangas.pages }}
-
-<hr>
-
-{% for manga in site.mangas %}
-  <h2>
-    <a href="{{ baseurl }}/{{ manga.url }}">
-      {{ manga.title }}
-    </a>
-  </h2>
-{% endfor %}
 	</body>
 </html>
