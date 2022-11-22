@@ -3,7 +3,8 @@
 		<title>{{ page.path }}</title>
 	</head>
 	<body>
-		<code>
+		<div>
+		<pre><code class="language-json language-js json">
 			{
 				"title": "{{ page.title }}",
 				"title-original": "{{ page.title-original }}",
@@ -14,31 +15,17 @@
 				"volumes": {{ page.volumes | jsonify }},
 				"variants": {{ page.variants | jsonify}}
 			}
-		</code>
-		<h1> {{page.title}} </h1>
-		{% if page.story == page.designs %}
-			<h2> {{page.story}}</h2>
-		{% else %}
-			<h2>{{page.story}} - {{page.designs}}</h2>
-		{% endif %}
-			<h3> {{page.editor}}</h3>
-<hr>
-{% for vol in page.volumes %}
-	<img src="/mmdb/img/mashle/mashle-{{ vol }}.jpg"/>
-{% endfor%}
+		</code></pre></div>
+		<div>
+	<hr>
+	{% for vol in page.volumes %}
+		<img src="/mmdb/img/mashle/mashle-{{ vol }}.jpg"/>
+	{% endfor%}
 
 <hr>
-{% for var in page.variants %}
-	<img src="/mmdb/img/mashle/mashle-{{ var }}-variant.jpg" />
-{% endfor%}
-
-<hr>
-{% for staff_member in site.mangas %}
-  <h2>
-    <a href="{{ site.baseurl }}/{{ staff_member.url }}">
-      {{ staff_member.title }}
-    </a>
-  </h2>
-{% endfor %}
+	{% for var in page.variants %}
+		<img src="/mmdb/img/mashle/mashle-{{ var }}-variant.jpg" />
+	{% endfor%}
+</div>
 	</body>
 </html>
