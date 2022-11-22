@@ -3,7 +3,7 @@
 		<title>{{ page.path }}</title>
 	</head>
 		{% for manga in site.mangas %}
-  		<h2><a href="{{ page.baseurl }}/{{ manga.url }}">{{ manga.title }}</a></h2>
+  		<h2><a href="{{ site.baseurl }}/{{ manga.url }}">{{ manga.title }}</a></h2>
 		{% endfor %}
 	</body>
 </html>
