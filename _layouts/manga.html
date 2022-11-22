@@ -3,6 +3,17 @@
 		<title>{{ page.path }}</title>
 	</head>
 	<body>
+		<code>
+			{
+				"title": "{{ page.title }}",
+				"title-original": "{{ page.title-original }}",
+				"genres": {{ page.genres | jsonify }},
+				"story": "{{ page.story }}",
+				"designs": "{{ page.designs}}",
+				"editor": "{{ page.editor }}",
+				"volumes": {{ page.volumes | jsonify }},
+			}
+		</code>
 		<h1> {{page.title}} </h1>
 		{% if page.story == page.designs %}
 			<h2> {{page.story}}</h2>
@@ -12,18 +23,18 @@
 			<h3> {{page.editor}}</h3>
 <hr>
 {% for vol in page.volumes %}
-	<img src="{{ baseurl }}/img/mashle/mashle-{{ vol }}.jpg"/>
+	<img src="/mmdb/img/mashle/mashle-{{ vol }}.jpg"/>
 {% endfor%}
 
 <hr>
 {% for var in page.variants %}
-	<img src="{{ baseurl }}/img/mashle/mashle-{{ var}}-variant.jpg" />
+	<img src="/mmdb/img/mashle/mashle-{{ var}}-variant.jpg" />
 {% endfor%}
 
 <hr>
 {% for staff_member in site.mangas %}
   <h2>
-    <a href="{{ staff_member.url }}">
+    <a href="{{ domain }}/{{ baseurl }}/{{ staff_member.url }}">
       {{ staff_member.title }}
     </a>
   </h2>
