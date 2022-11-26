@@ -7,7 +7,7 @@ designs: "Naoki Urasawa"
 editor: "Panini Comics"
 volumes: [1,2,3,4,5,6,7,8,9]
 variants: []
-img-dir: "/20th-century-boys"
+img-dir: "20th-century-boys"
 img-name: "20th-century-boys"
 
 layout: manga
