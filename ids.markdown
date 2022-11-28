@@ -2,7 +2,5 @@
 layout: none
 ---
 {% for manga in site.mangas %}
-			<code>
-				{"uuid":"{{ manga.uuid }}","dir":"{{manga.img-dir}}"}
-			</code>
+{"uuid":"{{ manga.uuid }}","dir":"{{manga.img-dir}}"}
 {% endfor %}
