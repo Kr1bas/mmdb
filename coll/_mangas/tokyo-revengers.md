@@ -1,4 +1,5 @@
 ---
+id: 01ff3a11473e8e5639f9d8afe7b894956a3e67ab
 title: "Tokyo Revengers"
 title-original: "Tokyo Ribenjazu"
 genres: ["shonen"]

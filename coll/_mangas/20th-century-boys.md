@@ -1,4 +1,5 @@
 ---
+id: "d04cc31958df84cff2980642e9f402163ae8f610"
 title: "20th Century Boys"
 title-original: "Nijū seiki shōnen"
 genres: ["seinen"]
