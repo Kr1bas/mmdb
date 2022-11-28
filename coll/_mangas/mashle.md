@@ -1,4 +1,5 @@
 ---
+id: 5c963a0431ad96eb0eecf7d2c45d7bb56a154347
 title: "Mashle"
 title-original: "Mashle"
 genres: ["shonen"]

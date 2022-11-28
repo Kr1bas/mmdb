@@ -3,7 +3,9 @@
 		<title>{{ page.path }}</title>
 	</head>
 		{% for manga in site.mangas %}
-  		<h2><a href="{{ site.baseurl }}{{ manga.url }}">{{ manga.title }}</a></h2>
+			<code>
+				{"id":"{{ manga.id }}","title": "{{ manga.title }}","title-original": "{{ manga.title-original }}","genres": {{ manga.genres | jsonify }},"story": "{{ manga.story }}","designs": "{{ manga.designs}}","editor": "{{ manga.editor }}","volumes": {{ manga.volumes | jsonify }},"variants": {{ manga.variants | jsonify}},"img-dir":"{{manga.img-dir}}","img-name":"{{manga.img-name}}"}
+			</code>
 		{% endfor %}
 	</body>
 </html>
