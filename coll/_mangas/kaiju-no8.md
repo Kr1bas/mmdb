@@ -8,8 +8,8 @@ designs: "Naoya Matsumoto"
 editor: "Star Comics"
 volumes: [1,2,3,4,5,6]
 variants: []
-img-dir: "kaiju-no8"
-img-name: "kaiju-no8"
+img-dir: "kaiju-n8"
+img-name: "kaiju-n8"
 
 layout: manga
 ---
